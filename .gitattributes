@@ -1,0 +1,19 @@
+# GitHub Linguist configuration to ensure repository language stats show 100% C++
+
+# Exclude non-C++ files and build scripts from language stats
+* linguist-detectable=false
+*.* linguist-detectable=false
+
+# Explicitly mark build systems, workflows, and scripts as documentation/undetectable
+Makefile linguist-detectable=false linguist-documentation=true
+CMakeLists.txt linguist-detectable=false linguist-documentation=true
+*.sh linguist-detectable=false linguist-documentation=true
+*.md linguist-detectable=false linguist-documentation=true
+*.yml linguist-detectable=false linguist-documentation=true
+*.yaml linguist-detectable=false linguist-documentation=true
+LICENSE linguist-detectable=false linguist-documentation=true
+
+# Only C++ source and header files are counted in language statistics
+*.cpp linguist-detectable=true linguist-language=C++
+*.h linguist-detectable=true linguist-language=C++
+*.hpp linguist-detectable=true linguist-language=C++

@@ -1,0 +1,15 @@
+# Compiled binaries
+cinema_app
+*.out
+*.exe
+
+# Object files
+*.o
+*.obj
+
+# Debug symbols
+*.dSYM/
+
+# OS specific files
+.DS_Store
+Thumbs.db
